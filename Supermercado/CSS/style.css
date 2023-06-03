@@ -1,0 +1,119 @@
+
+
+/* Estilos para el contenedor principal */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #D2F3A3;
+}
+
+h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.login-box {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el formulario de inicio de sesión */
+  .titulo, .form_registro, .form_busqueda{
+    display: none;
+  }
+  
+  .form_ingreso label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form_ingreso input[type="text"],
+  .form_ingreso input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .form_ingreso input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #B7EF67;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form_ingreso input[type="submit"]:hover {
+    background-color: #ACFF35;
+  }
+  
+  /* Estilos para el encabezado del formulario de registro de productos */
+  .form_registro .titulo {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Estilos para el formulario de registro de productos */
+  .form_registro label, .form_busqueda label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form_registro input[type="text"],
+  .form_registro input[type="number"], .form_busqueda input[type=text] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .form_registro input[type="submit"], .form_busqueda input[type=submit] {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    background-color: #B7EF67;
+    border: none;
+    color: #3a3a3a;
+    cursor: pointer;
+  }
+  
+  .form_registro input[type="submit"]:hover {
+    background-color: #ACFF35;
+  }
+
+  
+  
+  /* Estilos del producto consecuente de una busqueda */
+  .producto{
+    display: flex;
+    background-color: rgb(17, 17, 17);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 7px;
+    border: 5px solid rgb(78, 78, 78);
+  }
+
+  .producto img{
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    
+  }
+  .producto h3, .producto h4{
+    color: white;
+  }
