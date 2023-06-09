@@ -143,6 +143,7 @@
 
 			$ejecutar = mysqli_query($conn, $sql);
             $fila = mysqli_fetch_array($ejecutar);
+			$precio = $fila['precio'];
 
             mysqli_close($conn);
 
@@ -153,7 +154,7 @@
 					<div class="prod_info">
 						<h3><?php echo $fila['nombre'];?></h3>
 						<h4>- Peso: <?php echo $fila['peso'];?> kg.</h4>
-						<h4>- Precio: $<?php echo $fila['precio'];?></h4>
+						<h4>- Precio c/ IVA: $<?php echo $precio+($precio*0.21);?></h4>
 						<h4>- Proveedor: <?php echo $fila['proveedor'];?></h4>
 				
 						
